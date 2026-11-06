@@ -5,90 +5,110 @@
 (() => {
   'use strict';
 
-  // --- BRANCH CONFIGURATION ---
+  // --- BRANCH CONFIGURATION (PATHANAMTHITTA DISTRICT & SUB-DISTRICTS) ---
   const BRANCHES = [
     {
-      id: 'ottapalam',
-      name: 'Ottapalam (Central Hub)',
-      tagline: 'Main Warehouse & Distribution Depot',
-      area: 'Ottapalam & Palakkad District',
+      id: 'pathanamthitta',
+      name: 'Pathanamthitta (Central Hub)',
+      tagline: 'Central Warehouse & District Distribution Depot',
+      area: 'Kozhencherry Taluk (District HQ)',
       badge: 'Main Warehouse',
-      address: 'Main Road, Near Bus Stand, Ottapalam, Kerala 679101',
-      phone: '+91 90480 50905',
-      waNumber: '919048050905',
+      address: 'Ring Road, Near KSRTC & Private Bus Stand, Pathanamthitta, Kerala 689645',
+      phone: '+91 94470 50905',
+      waNumber: '919447050905',
       hours: 'Mon–Sat: 6:00 AM – 9:00 PM | Sun: 8:00 AM – 1:00 PM',
-      deliveryInfo: 'Vans leave at 6:30 AM & 2:00 PM. Same-day in 25 km.',
+      deliveryInfo: 'Early morning van fleet leaves 6:30 AM & 2:00 PM. Same-day in 25 km.',
       routes: [
-        { place: 'Ottapalam Town & Palappuram', time: 'Same day (Twice daily)', badge: 'Express' },
-        { place: 'Shoranur & Kulapully', time: 'Same day (Morning & Noon)', badge: 'Daily' },
-        { place: 'Lakkidi, Vaniyamkulam & Mannur', time: 'Same day', badge: 'Daily' },
-        { place: 'Cherpulassery & Thootha', time: 'Same day', badge: 'Daily' },
-        { place: 'Pattambi Route', time: 'Next morning (7:00 AM)', badge: 'Morning' },
-        { place: 'Palakkad Town Link', time: 'Next morning', badge: 'Morning' },
-        { place: 'Mannarkkad & Alanallur', time: 'Tue · Thu · Sat', badge: 'Scheduled' },
-        { place: 'Thrissur Border (Wadakkanchery)', time: 'On request / Large orders', badge: 'Custom' }
+        { place: 'Pathanamthitta Town & College Road', time: 'Same day (Twice daily)', badge: 'Express' },
+        { place: 'Kumbazha, Omalloor & Mylapra', time: 'Same day (Morning & Noon)', badge: 'Daily' },
+        { place: 'Kozhencherry & Maramon Market', time: 'Same day', badge: 'Daily' },
+        { place: 'Elanthoor & Naranganam', time: 'Same day', badge: 'Daily' },
+        { place: 'Pramadam & V-Kottayam', time: 'Daily morning', badge: 'Morning' },
+        { place: 'Malayalapuzha Route', time: 'Daily afternoon', badge: 'Scheduled' },
+        { place: 'Pandalam Border Link', time: 'Daily morning (7:00 AM)', badge: 'Morning' },
+        { place: 'Sabarimala Pilgrimage Route', time: 'On request / Event bulk', badge: 'Custom' }
       ]
     },
     {
-      id: 'palakkad',
-      name: 'Palakkad City Depot',
-      tagline: 'Town Express Route & Sub-Distribution Hub',
-      area: 'Palakkad Town & Industrial Belt',
-      badge: 'Express Hub',
-      address: 'Robinson Road, Near Fort & Stadium Stand, Palakkad, Kerala 678001',
+      id: 'thiruvalla',
+      name: 'Thiruvalla Commercial Hub',
+      tagline: 'MC Road Express Fleet & Cool Bar Distribution',
+      area: 'Thiruvalla Taluk & Commercial Belt',
+      badge: 'Commercial Hub',
+      address: 'MC Road, Near Pushpagiri Junction, Thiruvalla, Kerala 689101',
       phone: '+91 94470 12345',
       waNumber: '919447012345',
       hours: 'Mon–Sat: 6:30 AM – 9:30 PM | Sun: 8:00 AM – 2:00 PM',
-      deliveryInfo: 'Express 2-hr town courier + 7:00 AM daily morning logistics fleet.',
+      deliveryInfo: 'Express 2-hr town delivery + 7:00 AM daily wholesale logistics fleet.',
       routes: [
-        { place: 'Palakkad Town, Big Bazaar & Fort', time: 'Express 2-hr / Daily 7:00 AM', badge: 'Express' },
-        { place: 'Kalpathy & Olavakkode Railway Jct', time: 'Same day (Morning & Afternoon)', badge: 'Daily' },
-        { place: 'Kanjikode Industrial Park', time: 'Same day (Direct dock delivery)', badge: 'Daily' },
-        { place: 'Pudussery & Chandranagar', time: 'Same day', badge: 'Daily' },
-        { place: 'Chittur & Koduvayur Route', time: 'Daily 1:00 PM', badge: 'Scheduled' },
-        { place: 'Alathur & Kuzhalmannam', time: 'Next morning', badge: 'Morning' },
-        { place: 'Malampuzha Tourism Zone', time: 'Daily 8:30 AM', badge: 'Daily' },
-        { place: 'Coimbatore Border / Walayar', time: 'On request / Bulk loads', badge: 'Custom' }
+        { place: 'Thiruvalla Town, Deepa Jct & Crossway', time: 'Express 2-hr / Daily 7:00 AM', badge: 'Express' },
+        { place: 'Pushpagiri & Medical College Zone', time: 'Same day (Morning & Afternoon)', badge: 'Daily' },
+        { place: 'Kuttoor & Podiyadi Bypass', time: 'Same day', badge: 'Daily' },
+        { place: 'Muthoor & Manjadi Junction', time: 'Same day', badge: 'Daily' },
+        { place: 'Kavumbhagom & Idinjillam', time: 'Same day', badge: 'Daily' },
+        { place: 'Mallappally Taluk Link Road', time: 'Daily morning', badge: 'Morning' },
+        { place: 'Changanassery Border', time: 'Daily afternoon', badge: 'Scheduled' },
+        { place: 'Chengannur / Alappuzha Border', time: 'On request / Bulk loads', badge: 'Custom' }
       ]
     },
     {
-      id: 'shoranur',
-      name: 'Shoranur Junction Branch',
-      tagline: 'Railway Transit Hub & Cool Bar Supply',
-      area: 'Shoranur, Kulapully & Thrissur Border',
+      id: 'adoor',
+      name: 'Adoor Central Depot',
+      tagline: 'KP Road Transit Hub & Wholesale Market Supply',
+      area: 'Adoor Taluk & Parakode Wholesale Zone',
       badge: 'Transit Hub',
-      address: 'Railway Station Road, Kulapully, Shoranur, Kerala 679121',
+      address: 'KP Road, Near Central Bypass & Stadium, Adoor, Kerala 691523',
       phone: '+91 98460 67890',
       waNumber: '919846067890',
       hours: 'Mon–Sat: 6:00 AM – 8:30 PM | Sun: 8:00 AM – 12:00 PM',
       deliveryInfo: 'Morning dispatch 6:30 AM, afternoon dispatch 1:30 PM.',
       routes: [
-        { place: 'Shoranur Town & Railway Stalls', time: 'Same day (6:30 AM & 1:30 PM)', badge: 'Express' },
-        { place: 'Kulapully Bypass Junction', time: 'Same day', badge: 'Daily' },
-        { place: 'Cheruthuruthy (Kalamandalam Area)', time: 'Same day', badge: 'Daily' },
-        { place: 'Vaniyamkulam & Vallapuzha', time: 'Same day', badge: 'Daily' },
-        { place: 'Pattambi Link Road', time: 'Daily morning', badge: 'Morning' },
-        { place: 'Wadakkanchery Border', time: 'Daily afternoon', badge: 'Scheduled' }
+        { place: 'Adoor Town & KSRTC Station Area', time: 'Same day (6:30 AM & 1:30 PM)', badge: 'Express' },
+        { place: 'Parakode Wholesale Vegetable & Grain Market', time: 'Same day (6:00 AM)', badge: 'Daily' },
+        { place: 'Ezhamkulam & Kadampanad', time: 'Same day', badge: 'Daily' },
+        { place: 'Pandalam Town & Medical Mission', time: 'Same day', badge: 'Daily' },
+        { place: 'Enathu & Kollam Border', time: 'Daily afternoon', badge: 'Scheduled' },
+        { place: 'Pathanapuram Link Road', time: 'Daily morning', badge: 'Morning' }
       ]
     },
     {
-      id: 'cherpulassery',
-      name: 'Cherpulassery & Pattambi Point',
-      tagline: 'North Palakkad & Catering Wholesale Depot',
-      area: 'Cherpulassery, Pattambi & Malappuram Border',
-      badge: 'Regional Depot',
-      address: 'Bypass Junction, Perinthalmanna Road, Cherpulassery, Kerala 679503',
+      id: 'ranni',
+      name: 'Ranni Highland Depot',
+      tagline: 'Highland Cool Drinks & Catering Wholesale Supply',
+      area: 'Ranni Taluk (Gateway to Sabarimala)',
+      badge: 'Highland Depot',
+      address: 'Ittichuvadu Junction, Main Road, Ranni, Kerala 689672',
       phone: '+91 97450 43210',
-      waNumber: '919745043210',
+      waNumber: '9745043210',
       hours: 'Mon–Sat: 6:30 AM – 8:30 PM | Sun: 9:00 AM – 1:00 PM',
-      deliveryInfo: 'Specialized wedding & catering supply with cold boxes on hire.',
+      deliveryInfo: 'Specialized wedding & catering supply with insulated ice boxes on hire.',
       routes: [
-        { place: 'Cherpulassery Town & College Road', time: 'Same day (7:00 AM & 3:00 PM)', badge: 'Express' },
-        { place: 'Pattambi Central Market', time: 'Same day', badge: 'Daily' },
-        { place: 'Koppam & Chalissery', time: 'Same day', badge: 'Daily' },
-        { place: 'Thootha & Vellinezhi', time: 'Same day', badge: 'Daily' },
-        { place: 'Perinthalmanna Border', time: 'Daily morning', badge: 'Morning' },
-        { place: 'Sreekrishnapuram & Karimpuzha', time: 'Daily afternoon', badge: 'Scheduled' }
+        { place: 'Ranni Town, Ittichuvadu & Angadi', time: 'Same day (7:00 AM & 3:00 PM)', badge: 'Express' },
+        { place: 'Vadasserikkara & Perunad', time: 'Same day', badge: 'Daily' },
+        { place: 'Pazhavangadi & Chettimukku', time: 'Same day', badge: 'Daily' },
+        { place: 'Ayroor & Cherukolpuzha', time: 'Same day', badge: 'Daily' },
+        { place: 'Seethathode & Chittar Route', time: 'Daily morning', badge: 'Morning' },
+        { place: 'Plappally & Sabarimala Foothills', time: 'Special event wholesale', badge: 'Custom' }
+      ]
+    },
+    {
+      id: 'konni',
+      name: 'Konni & Mallappally Sub-Hub',
+      tagline: 'Sub-District Route Fleet for Konni & Mallappally',
+      area: 'Konni & Mallappally Taluks',
+      badge: 'Sub-District Hub',
+      address: 'Main Junction, Near Medical College Road, Konni, Kerala 689691',
+      phone: '+91 94950 88776',
+      waNumber: '919495088776',
+      hours: 'Mon–Sat: 6:30 AM – 8:00 PM | Sun: 8:30 AM – 1:00 PM',
+      deliveryInfo: 'Dedicated daily route vans serving eastern & northern sub-district ranges.',
+      routes: [
+        { place: 'Konni Town, Aruvapulam & Kallely', time: 'Same day (Twice daily)', badge: 'Express' },
+        { place: 'Mallappally Town & Anicadu', time: 'Same day (Morning fleet)', badge: 'Daily' },
+        { place: 'Vennikulam & Kaviyoor Route', time: 'Same day', badge: 'Daily' },
+        { place: 'Konni Medical College Zone', time: 'Same day (7:30 AM & 2:00 PM)', badge: 'Express' },
+        { place: 'Thannithode & Chittar Foothills', time: 'Daily afternoon', badge: 'Scheduled' },
+        { place: 'Kottangal & Chungappara Border', time: 'Mon · Wed · Fri', badge: 'Scheduled' }
       ]
     }
   ];
@@ -354,7 +374,7 @@
       cat: 'dairy',
       name: 'Kerala Spiced Sambharam (Moru)',
       pack: '200 ml × 30 pouches/cups',
-      price: 390,
+      price: 350,
       tag: 'Traditional',
       stock: 'In stock',
       image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=600&q=80',
@@ -376,9 +396,9 @@
   const fmt = n => '₹' + Number(n).toLocaleString('en-IN');
   const fallbackSvg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23e7f0ee'/%3E%3Cpath d='M170 110h60v20l20 30v90a10 10 0 0 1-10 10h-80a10 10 0 0 1-10-10V160l20-30v-20z' fill='none' stroke='%230e7c7b' stroke-width='6'/%3E%3Ccircle cx='200' cy='200' r='12' fill='%23e8590c'/%3E%3Ctext x='200' y='280' font-family='sans-serif' font-size='14' text-anchor='middle' fill='%2355696b'%3EChillHub Beverage%3C/text%3E%3C/svg%3E";
 
-  let currentBranchId = localStorage.getItem('chillhub_branch') || 'ottapalam';
+  let currentBranchId = localStorage.getItem('chillhub_branch') || 'pathanamthitta';
   // Ensure branch exists
-  if (!BRANCHES.some(b => b.id === currentBranchId)) currentBranchId = 'ottapalam';
+  if (!BRANCHES.some(b => b.id === currentBranchId)) currentBranchId = 'pathanamthitta';
 
   const cart = new Map(); // id -> qty
   // Load saved cart from localStorage

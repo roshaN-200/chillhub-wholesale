@@ -11,11 +11,12 @@ High-efficiency, responsive wholesale cool drinks distributor web application bu
    - Fast loading with `loading="lazy"` and built-in SVG fallback placeholders so cards never show broken images.
 
 2. **Multi-Branch Support ("with branch"):**
-   - **4 Configured Distribution Hubs:**
-     - **Ottapalam (Central Hub & Warehouse)** — Main warehouse, 25 km radius.
-     - **Palakkad City Depot** — Express 2-hour town delivery, Big Bazaar & Industrial belt.
-     - **Shoranur Junction Branch** — Transit hub, railway stalls & cool bars.
-     - **Cherpulassery & Pattambi Point** — North Palakkad wedding & catering depot.
+   - **5 Configured Sub-District Distribution Hubs:**
+     - **Pathanamthitta (Central Hub & Kozhencherry Taluk)** — Central depot, Ring Road & town route.
+     - **Thiruvalla Commercial Hub (Thiruvalla Taluk)** — MC Road express delivery, Pushpagiri medical belt.
+     - **Adoor Central Depot (Adoor Taluk)** — KP Road, Parakode wholesale market & Pandalam.
+     - **Ranni Highland Depot (Ranni Taluk)** — Sabarimala route, highland catering supply.
+     - **Konni & Mallappally Sub-Hub (Konni & Mallappally Taluks)** — Medical College & eastern range fleet.
    - **Interactive Branch Switching:**
      - Quick branch selector pill in the header.
      - Dedicated Branch Selection Modal with route timings, operating hours, and warehouse locations.

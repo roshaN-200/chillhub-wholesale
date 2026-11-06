@@ -88,52 +88,244 @@
 
   <main id="main">
 
-    <!-- HERO -->
+    <!-- REDESIGNED ENGAGING HERO SECTION -->
     <section class="hero">
-      <img class="hero__img" src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1600&q=80" alt="Warehouse crates of chilled drinks and beverages stacked high" width="1600" height="900">
+      <img class="hero__img" src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1600&q=80" alt="Chilled drink bottles and warehouse pallets" width="1600" height="900">
       <div class="hero__shade"></div>
+      
       <div class="container hero__content">
-        <div class="hero__branch-tag">
-          <span aria-hidden="true">📍</span>
-          <span>Delivering across <strong>Pathanamthitta District</strong> &amp; 5 Sub-District Hubs</span>
-          <button type="button" class="btn btn--ghost btn--sm" data-action="open-branch-modal" style="padding: 2px 8px; font-size: 0.7rem; border-radius: 999px;">Switch ⇄</button>
-        </div>
+        <div class="hero__grid">
+          <!-- Left Column: Value Proposition & CTAs -->
+          <div class="hero__text-col">
+            <div class="hero__badge-pill">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>🏆 <strong>Pathanamthitta's #1 Rated Beverage Distributor</strong> · 5 Local Hubs</span>
+            </div>
 
-        <h1 class="hero__title">Cold drinks by the case, <em>delivered</em> before your shutters open.</h1>
-        <p class="hero__lead">Wholesale soft drinks, fruit juices, soda, energy drinks and mineral water for bakeries, petty shops, hotels, cool bars and catering events across Pathanamthitta district. Honest case rates, zero middlemen hassle.</p>
-        
-        <div class="hero__cta">
-          <a href="#catalog" class="btn btn--primary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-            Browse Real-Time Catalog
-          </a>
-          <button type="button" class="btn btn--ghost" data-action="open-branch-modal">
-            Select Your Sub-District Branch
-          </button>
-        </div>
+            <h1 class="hero__title">
+              Cold drinks by the case. <em>Unbeatable</em> wholesale margins.
+            </h1>
+            
+            <p class="hero__lead">
+              Early morning doorstep delivery before your shutters open. Mix any 350+ brand colas, juices, sodas, and packaged drinking water with <strong>100% bottle breakage guarantee</strong> and honest case rates.
+            </p>
 
-        <ul class="hero__facts" aria-label="Key wholesale distributor facts">
-          <li><strong>350+</strong><span>Drink SKUs In Stock</span></li>
-          <li><strong>5 Hubs</strong><span>Pathanamthitta · Thiruvalla · Adoor · Ranni · Konni</span></li>
-          <li><strong>Same Day</strong><span>Delivery across all Taluks</span></li>
-          <li><strong>1,200+</strong><span>Retail Partners</span></li>
-        </ul>
+            <div class="hero__cta">
+              <a href="#catalog" class="btn btn--cta-main">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                <span>Browse 350+ Chilled Drinks</span>
+              </a>
+              <a href="https://wa.me/919447050905?text=Hi%20ChillHub%2C%20please%20send%20today%27s%20wholesale%20rate%20card" target="_blank" rel="noopener" class="btn btn--ghost">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+                <span>Get Today's Rate Card (15 Min)</span>
+              </a>
+            </div>
+
+            <div class="hero__trust-strip">
+              <span>⭐ <b>4.9/5 Rating</b> (1,200+ Retailers)</span>
+              <span>•</span>
+              <span>🛡️ <b>100% Breakage Replacement</b></span>
+              <span>•</span>
+              <span>🚚 <b>Zero Minimum on Pickup</b></span>
+            </div>
+
+            <ul class="hero__facts" aria-label="Key wholesale distributor facts">
+              <li><strong>350+</strong><span>Drink SKUs In Stock</span></li>
+              <li><strong>5 Hubs</strong><span>Across Pathanamthitta</span></li>
+              <li><strong>6:30 AM</strong><span>First-Route Dispatch</span></li>
+              <li><strong>1,200+</strong><span>Active Retailers</span></li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Interactive Floating Cooler Showcase -->
+          <div class="hero__showcase" aria-label="Top wholesale drink movers">
+            <div class="hero__showcase-head">
+              <span class="showcase-title">🔥 Fast Moving This Week</span>
+              <span class="showcase-live"><span class="live-dot" aria-hidden="true"></span>Live Stock</span>
+            </div>
+
+            <div class="showcase-cards">
+              <!-- Item 1 -->
+              <a href="#catalog" class="mini-card" data-jump="soft">
+                <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?auto=format&fit=crop&w=150&q=80" alt="Cola Glass Bottle" class="mini-card__thumb" loading="lazy">
+                <div class="mini-card__info">
+                  <h4 class="mini-card__name">Cola Glass Bottle (Chilled)</h4>
+                  <p class="mini-card__meta">250 ml × 24 · Bakery Favorite</p>
+                </div>
+                <div class="mini-card__price">
+                  <b>₹360</b>
+                  <span>/ case</span>
+                </div>
+              </a>
+
+              <!-- Item 2 -->
+              <a href="#catalog" class="mini-card" data-jump="juice">
+                <img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=150&q=80" alt="Alphonso Mango Tetra" class="mini-card__thumb" loading="lazy">
+                <div class="mini-card__info">
+                  <h4 class="mini-card__name">Alphonso Mango Tetra</h4>
+                  <p class="mini-card__meta">200 ml × 30 · High Margin Item</p>
+                </div>
+                <div class="mini-card__price">
+                  <b>₹480</b>
+                  <span>/ case</span>
+                </div>
+              </a>
+
+              <!-- Item 3 -->
+              <a href="#catalog" class="mini-card" data-jump="soda">
+                <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=150&q=80" alt="Kerala Goli Soda" class="mini-card__thumb" loading="lazy">
+                <div class="mini-card__info">
+                  <h4 class="mini-card__name">Kerala Marble Goli Soda</h4>
+                  <p class="mini-card__meta">200 ml × 24 · Kerala Classic</p>
+                </div>
+                <div class="mini-card__price">
+                  <b>₹240</b>
+                  <span>/ case</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="showcase-badge">
+              <span>🚚 <strong>Morning Fleet Departure:</strong> 6:30 AM &amp; 2:00 PM Daily across all Taluks</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- TRUST STRIP -->
-    <section class="strip" aria-label="Brands and beverage types">
-      <div class="container strip__inner">
-        <p>Direct wholesale stocks &amp; Kerala brands</p>
-        <ul>
-          <li>Chilled Colas</li>
-          <li>Orange &amp; Lime Fizz</li>
-          <li>Mango &amp; Guava Juices</li>
-          <li>Energy Cans</li>
-          <li>Packaged Mineral Water</li>
-          <li>Kerala Goli Soda</li>
-          <li>Badam &amp; Choco Milk</li>
-        </ul>
+    <!-- INTERACTIVE TOWN QUICK SELECTOR BAR -->
+    <nav class="town-bar" aria-label="Quick sub-district hub switcher">
+      <div class="container town-bar__inner">
+        <span class="town-bar__label">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Select Your Town:
+        </span>
+        <div class="town-bar__pills" id="townPillsContainer">
+          <button type="button" class="quick-hub-pill is-active" data-hub-id="pathanamthitta">📍 Pathanamthitta Central</button>
+          <button type="button" class="quick-hub-pill" data-hub-id="thiruvalla">📍 Thiruvalla (MC Road)</button>
+          <button type="button" class="quick-hub-pill" data-hub-id="adoor">📍 Adoor (Central Bypass)</button>
+          <button type="button" class="quick-hub-pill" data-hub-id="ranni">📍 Ranni (Highland)</button>
+          <button type="button" class="quick-hub-pill" data-hub-id="konni">📍 Konni &amp; Mallappally</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MOVING WHOLESALE RATES TICKER -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker">
+        <span class="ticker__item">🔥 Cola Glass 250ml: <b>₹360/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🥭 Alphonso Mango Tetra 200ml: <b>₹480/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">💧 Packaged Mineral Water 1L: <b>₹110/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">⚡ Energy Drink Can 250ml: <b>₹2,280/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🥤 Kerala Marble Goli Soda: <b>₹240/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🥛 Badam Milk 180ml: <b>₹750/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🥥 Spiced Buttermilk: <b>₹350/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🚚 <b>Free door unloading on scheduled routes</b></span>
+        <span class="ticker__sep">•</span>
+        <!-- Duplicated for seamless infinite loop -->
+        <span class="ticker__item">🔥 Cola Glass 250ml: <b>₹360/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🥭 Alphonso Mango Tetra 200ml: <b>₹480/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">💧 Packaged Mineral Water 1L: <b>₹110/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">⚡ Energy Drink Can 250ml: <b>₹2,280/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🥤 Kerala Marble Goli Soda: <b>₹240/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🥛 Badam Milk 180ml: <b>₹750/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🥥 Spiced Buttermilk: <b>₹350/case</b></span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🚚 <b>Free door unloading on scheduled routes</b></span>
+      </div>
+    </div>
+
+    <!-- THE 4 CHILLHUB RETAIL GUARANTEES -->
+    <section class="section" id="guarantees" style="padding-bottom: 0;">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Why Shop Owners Never Leave</p>
+          <h2 class="section__title">The 4 wholesale guarantees that protect your shop profits.</h2>
+          <p class="section__lead">We eliminate the headaches retail owners face with irregular suppliers and broken stock.</p>
+        </div>
+
+        <div class="guarantees-grid">
+          <article class="guarantee-card">
+            <div class="guarantee-icon">🛡️</div>
+            <h3>100% Spot Breakage Replacement</h3>
+            <p>If any bottle is chipped, leaking, or damaged upon delivery, our van driver replaces it on the spot. No paperwork, no waiting.</p>
+          </article>
+
+          <article class="guarantee-card">
+            <div class="guarantee-icon">⏰</div>
+            <h3>6:30 AM First-Drop Guarantee</h3>
+            <p>Our fleet leaves early so your cooler is fully stocked before your morning shutters go up and your morning tea rush arrives.</p>
+          </article>
+
+          <article class="guarantee-card">
+            <div class="guarantee-icon">🔀</div>
+            <h3>Mix Any 350+ Brands in 1 Order</h3>
+            <p>Don't get forced into heavy single-brand quotas. Combine 2 cases of cola, 2 of mango, and 1 soda — all count toward bulk discounts.</p>
+          </article>
+
+          <article class="guarantee-card">
+            <div class="guarantee-icon">🔄</div>
+            <h3>Full Return on Unopened Event Crates</h3>
+            <p>Booking drinks for a wedding, church fest, or catering contract? We collect all unopened crates the next day with 100% refund.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE RETAIL PROFIT & SAVINGS CALCULATOR -->
+    <section class="section" id="calculator">
+      <div class="container">
+        <div class="calc-box">
+          <div class="calc-box__left">
+            <p class="eyebrow eyebrow--light">Retail Profit Estimator</p>
+            <h2>Calculate your monthly wholesale savings with ChillHub.</h2>
+            <p>See how much extra profit your bakery, petty shop, or supermarket retains by buying direct from our district distribution hubs.</p>
+            
+            <div class="calc-slider-wrap">
+              <div class="calc-slider-head">
+                <span>How many cases do you sell per week?</span>
+                <b id="calcCasesVal">25 cases / week</b>
+              </div>
+              <input type="range" min="5" max="100" step="5" value="25" class="calc-slider" id="calcCasesSlider" aria-label="Select weekly cases volume">
+              <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: #a9cfcb; margin-top: 6px;">
+                <span>5 cases (Petty Shop)</span>
+                <span>25 cases (Bakery / Cool Bar)</span>
+                <span>100+ cases (Supermarket / Caterer)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-box__card">
+            <span class="calc-card-eyebrow">ESTIMATED MONTHLY SAVINGS</span>
+            <div class="calc-savings-number" id="calcMonthlyVal">₹4,800</div>
+            <p class="calc-savings-sub">Extra profit kept in your pocket each month</p>
+            <span class="calc-tier-badge" id="calcDiscountTier">Tier 2 Bulk Buyer (Extra 3–5% OFF)</span>
+            
+            <ul class="calc-perks-list" id="calcPerksList">
+              <li>✓ Extra 3–5% bulk case discount</li>
+              <li>✓ Free single-door visi-cooler eligibility</li>
+              <li>✓ Priority 2-hour morning dispatch</li>
+              <li>✓ Weekly credit settlement terms</li>
+            </ul>
+
+            <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--block" id="calcWaBtn" style="margin-top: 8px;">
+              Claim This Rate on WhatsApp ➔
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 

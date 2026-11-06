@@ -512,6 +512,11 @@
       }
     });
 
+    // 5. Update Quick Town Selector Pills Bar
+    $$('.quick-hub-pill').forEach(pill => {
+      pill.classList.toggle('is-active', pill.dataset.hubId === b.id);
+    });
+
     // Update select element in quote form
     const quoteBranchSelect = $('#quoteBranchSelect');
     if (quoteBranchSelect) quoteBranchSelect.value = b.id;
@@ -1026,6 +1031,76 @@ _Sent via ChillHub Distributor Portal_`;
       `;
       f.reset();
     });
+  }
+
+  // --- QUICK TOWN SELECTOR BAR DELEGATION ---
+  const townPillsContainer = $('#townPillsContainer');
+  if (townPillsContainer) {
+    townPillsContainer.addEventListener('click', e => {
+      const pill = e.target.closest('.quick-hub-pill');
+      if (pill && pill.dataset.hubId) {
+        setBranch(pill.dataset.hubId);
+      }
+    });
+  }
+
+  // --- INTERACTIVE RETAIL PROFIT & SAVINGS CALCULATOR ---
+  const calcSlider = $('#calcCasesSlider');
+  const calcCasesVal = $('#calcCasesVal');
+  const calcMonthlyVal = $('#calcMonthlyVal');
+  const calcDiscountTier = $('#calcDiscountTier');
+  const calcPerksList = $('#calcPerksList');
+  const calcWaBtn = $('#calcWaBtn');
+
+  function updateCalculator() {
+    if (!calcSlider) return;
+    const weeklyCases = +calcSlider.value;
+    if (calcCasesVal) calcCasesVal.textContent = `${weeklyCases} cases / week`;
+
+    const monthlyCases = weeklyCases * 4;
+    let savingsPerCase = 35;
+    let tierLabel = 'Standard Route Rate';
+    let perksHtml = `
+      <li>✓ Free morning door delivery on route</li>
+      <li>✓ 100% instant bottle breakage cover</li>
+      <li>✓ Mix any brands in every case</li>
+    `;
+
+    if (weeklyCases >= 40) {
+      savingsPerCase = 65;
+      tierLabel = 'Tier 3 Event / Sub-Dealer';
+      perksHtml = `
+        <li>✓ Extra 5% wholesale bulk rebate</li>
+        <li>✓ Free double-door commercial visi-cooler</li>
+        <li>✓ 14-day revolving credit line</li>
+        <li>✓ Dedicated festival/wedding delivery van</li>
+      `;
+    } else if (weeklyCases >= 15) {
+      savingsPerCase = 48;
+      tierLabel = 'Tier 2 Bulk Buyer (Extra 3–5% OFF)';
+      perksHtml = `
+        <li>✓ Extra 3–5% bulk case discount</li>
+        <li>✓ Free single-door visi-cooler eligibility</li>
+        <li>✓ Priority 2-hour morning dispatch</li>
+        <li>✓ Weekly credit settlement terms</li>
+      `;
+    }
+
+    const estimatedSavings = monthlyCases * savingsPerCase;
+    if (calcMonthlyVal) calcMonthlyVal.textContent = fmt(estimatedSavings);
+    if (calcDiscountTier) calcDiscountTier.textContent = tierLabel;
+    if (calcPerksList) calcPerksList.innerHTML = perksHtml;
+
+    if (calcWaBtn) {
+      const b = getBranch();
+      const msg = `Hi ChillHub ${b.name}, my shop sells ~${weeklyCases} cases/week. I want to unlock the ${tierLabel} wholesale rate and free delivery perks.`;
+      calcWaBtn.href = `https://wa.me/${b.waNumber}?text=${encodeURIComponent(msg)}`;
+    }
+  }
+
+  if (calcSlider) {
+    calcSlider.addEventListener('input', updateCalculator);
+    updateCalculator();
   }
 
   // --- INTERSECTION OBSERVER REVEAL ---

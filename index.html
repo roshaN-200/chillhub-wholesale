@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChillHub Wholesale — Cool Drinks & Beverages Distributor | Ottapalam, Palakkad & Shoranur</title>
+  <meta name="description" content="ChillHub Wholesale supplies soft drinks, fruit juices, energy drinks, soda and mineral water by the case with multi-branch route delivery across Ottapalam, Palakkad, Shoranur & Cherpulassery.">
+  <meta property="og:title" content="ChillHub Wholesale — Cool Drinks & Beverages by the Case">
+  <meta property="og:description" content="Wholesale beverage distributor with real-time stock, multi-branch route logistics, and instant WhatsApp ordering.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1200&q=80">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect x=%229%22 y=%223%22 width=%2214%22 height=%2226%22 rx=%225%22 fill=%22%230e7c7b%22/%3E%3Ccircle cx=%2216%22 cy=%2218%22 r=%223%22 fill=%22%23e8590c%22/%3E%3C/svg%3E">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WholesaleStore",
+    "name": "ChillHub Wholesale Beverages",
+    "description": "Wholesale beverage distributor supplying soft drinks, juices, energy cans, packaged water, soda and dairy drinks across Kerala.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ottapalam",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Sa 06:00-21:00"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="brand" aria-label="ChillHub Wholesale Home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <rect x="9" y="3" width="14" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M9 13h14" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="16" cy="20" r="2.5" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand__name">ChillHub<span>Wholesale Drinks</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary Navigation">
+        <a href="#categories">Categories</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#pricing">Bulk Pricing</a>
+        <a href="#delivery">Routes &amp; Branches</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Branch Switcher Pill -->
+        <button class="branch-pill" id="headerBranchBtn" data-action="open-branch-modal" aria-label="Select delivery branch location" title="Switch your delivery branch">
+          <span class="branch-pill__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </span>
+          <span class="branch-pill__name" id="headerBranchName">Ottapalam (Central Hub)</span>
+          <span class="branch-pill__badge" id="headerBranchBadge">Main Warehouse</span>
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="cart-btn" id="cartBtn" aria-label="Open order list">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 7h18l-2 12H5L3 7z"/>
+            <path d="M8 7V5a4 4 0 0 1 8 0v2"/>
+          </svg>
+          <span>Order List</span>
+          <b class="cart-count" id="cartCount">0</b>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero__img" src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1600&q=80" alt="Warehouse crates of chilled drinks and beverages stacked high" width="1600" height="900">
+      <div class="hero__shade"></div>
+      <div class="container hero__content">
+        <div class="hero__branch-tag">
+          <span aria-hidden="true">📍</span>
+          <span>Delivering from <strong>Ottapalam Central Hub</strong> &amp; 3 District Branches</span>
+          <button type="button" class="btn btn--ghost btn--sm" data-action="open-branch-modal" style="padding: 2px 8px; font-size: 0.7rem; border-radius: 999px;">Switch ⇄</button>
+        </div>
+
+        <h1 class="hero__title">Cold drinks by the case, <em>delivered</em> before your shutters open.</h1>
+        <p class="hero__lead">Wholesale soft drinks, fruit juices, soda, energy drinks and mineral water for bakeries, petty shops, hotels, cool bars and catering events. Honest case rates, zero middlemen hassle.</p>
+        
+        <div class="hero__cta">
+          <a href="#catalog" class="btn btn--primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            Browse Real-Time Catalog
+          </a>
+          <button type="button" class="btn btn--ghost" data-action="open-branch-modal">
+            Select Your Nearest Branch
+          </button>
+        </div>
+
+        <ul class="hero__facts" aria-label="Key wholesale distributor facts">
+          <li><strong>350+</strong><span>Drink SKUs In Stock</span></li>
+          <li><strong>4 Branches</strong><span>Ottapalam · Palakkad · Shoranur · Cherpulassery</span></li>
+          <li><strong>Same Day</strong><span>Delivery within 25 km</span></li>
+          <li><strong>1,200+</strong><span>Retail Partners</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="strip" aria-label="Brands and beverage types">
+      <div class="container strip__inner">
+        <p>Direct wholesale stocks &amp; Kerala brands</p>
+        <ul>
+          <li>Chilled Colas</li>
+          <li>Orange &amp; Lime Fizz</li>
+          <li>Mango &amp; Guava Juices</li>
+          <li>Energy Cans</li>
+          <li>Packaged Mineral Water</li>
+          <li>Kerala Goli Soda</li>
+          <li>Badam &amp; Choco Milk</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Product categories</p>
+          <h2 class="section__title">Every shelf in your cooler, from one wholesale supplier.</h2>
+          <p class="section__lead">Click any category to filter live products and prices instantly.</p>
+        </div>
+        <div class="cat-grid">
+          <a href="#catalog" class="cat cat--lg" data-jump="soft">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=80" alt="Chilled cola and lemon soft drink bottles on ice" loading="lazy" width="900" height="675">
+            <div class="cat__body">
+              <h3>Soft Drinks</h3>
+              <p>Colas, orange fizz, lemon-lime &amp; clear soda in 250ml to 2.25L family packs</p>
+            </div>
+          </a>
+          <a href="#catalog" class="cat" data-jump="juice">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=80" alt="Fresh mango and guava fruit juices" loading="lazy" width="900" height="675">
+            <div class="cat__body">
+              <h3>Fruit Juices</h3>
+              <p>Alphonso mango, pink guava &amp; mixed tropical punch</p>
+            </div>
+          </a>
+          <a href="#catalog" class="cat" data-jump="energy">
+            <img src="https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=900&q=80" alt="Chilled energy drink cans with water splash" loading="lazy" width="900" height="675">
+            <div class="cat__body">
+              <h3>Energy &amp; Sports</h3>
+              <p>Taurine cans, PET energy &amp; electrolyte hydration</p>
+            </div>
+          </a>
+          <a href="#catalog" class="cat" data-jump="water">
+            <img src="https://images.unsplash.com/photo-1559839914-17aae19cec71?auto=format&fit=crop&w=900&q=80" alt="Clean mineral water bottles and dispenser jar" loading="lazy" width="900" height="675">
+            <div class="cat__body">
+              <h3>Packaged Water</h3>
+              <p>500 ml, 1 L, 2 L travel packs &amp; 20 L bubble-top refill jars</p>
+            </div>
+          </a>
+          <a href="#catalog" class="cat" data-jump="soda">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=80" alt="Fizzy lemon soda and tonic water on ice" loading="lazy" width="900" height="675">
+            <div class="cat__body">
+              <h3>Soda &amp; Mixers</h3>
+              <p>Kerala marble goli soda, extra fizz club soda &amp; tonic cans</p>
+            </div>
+          </a>
+          <a href="#catalog" class="cat cat--wide" data-jump="dairy">
+            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=900&q=80" alt="Badam flavoured milk and spiced buttermilk bottles" loading="lazy" width="900" height="675">
+            <div class="cat__body">
+              <h3>Dairy &amp; Coolants</h3>
+              <p>Badam saffron milk, rich chocolate milkshake &amp; Kerala spiced moru</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE CATALOG WITH REAL DRINK PICTURES -->
+    <section class="section section--tint" id="catalog">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow">Real-Time Drinks Catalog</p>
+            <h2 class="section__title">Build your order list by the case.</h2>
+            <p class="section__lead">Pick cold drinks, select cases, and dispatch your order list directly to your nearest branch on WhatsApp.</p>
+          </div>
+          
+          <!-- Instant Search -->
+          <label class="search">
+            <span class="sr-only">Search beverages</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="search" placeholder="Search drinks: cola, mango, soda, water...">
+          </label>
+        </div>
+
+        <!-- Filter Pill Tabs -->
+        <div class="filters" role="tablist" aria-label="Filter drinks by category" id="filters">
+          <button role="tab" aria-selected="true" class="active" data-filter="all">All Beverages</button>
+          <button role="tab" aria-selected="false" data-filter="soft">Soft Drinks</button>
+          <button role="tab" aria-selected="false" data-filter="juice">Fruit Juices</button>
+          <button role="tab" aria-selected="false" data-filter="energy">Energy &amp; Sports</button>
+          <button role="tab" aria-selected="false" data-filter="water">Packaged Water</button>
+          <button role="tab" aria-selected="false" data-filter="soda">Soda &amp; Mixers</button>
+          <button role="tab" aria-selected="false" data-filter="dairy">Dairy &amp; Coolants</button>
+        </div>
+
+        <!-- Real Product Grid Loaded via JS -->
+        <div class="products-grid" id="products" aria-live="polite"></div>
+        <p class="empty" id="empty" hidden>No beverages match that search. Try searching for "cola", "mango", "energy", or "soda".</p>
+        <p class="note">★ Indicative wholesale rates per case. Rates update with manufacturer company price lists. Final invoice confirmed by your selected branch dispatcher.</p>
+      </div>
+    </section>
+
+    <!-- BULK PRICING TIERS -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Volume wholesale pricing</p>
+          <h2 class="section__title">The more cases you move, the better your wholesale margin.</h2>
+          <p class="section__lead">Mix and match any drink brands, PET bottles, or tetra packs. Tier volume is counted across your total order cases.</p>
+        </div>
+
+        <div class="tiers">
+          <article class="tier">
+            <h3>Retail Route Rate</h3>
+            <p class="tier__for">Petty shops, bakeries &amp; tea stalls</p>
+            <p class="tier__price"><strong>5+</strong> cases / order</p>
+            <ul>
+              <li>Standard distributor case rate</li>
+              <li>Mix any brands and bottle sizes</li>
+              <li>Next-morning door delivery on regular route</li>
+              <li>Damaged bottle spot replacement guarantee</li>
+            </ul>
+            <a href="#catalog" class="btn btn--outline">Start Order List</a>
+          </article>
+
+          <article class="tier tier--featured">
+            <p class="tier__badge">Best Wholesale Value</p>
+            <h3>Bulk Buyer Tier</h3>
+            <p class="tier__for">Supermarkets, restaurants, cool bars</p>
+            <p class="tier__price"><strong>25+</strong> cases / order</p>
+            <ul>
+              <li>Extra 3% to 5% flat discount off case rate</li>
+              <li>Same-day priority van delivery within 25 km</li>
+              <li>Weekly revolving credit for active accounts</li>
+              <li>Free visi-cooler placement on eligible volume</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Get Bulk Quote</a>
+          </article>
+
+          <article class="tier">
+            <h3>Events &amp; Sub-Dealers</h3>
+            <p class="tier__for">Weddings, festivals, caterers, sub-stockists</p>
+            <p class="tier__price"><strong>100+</strong> cases / order</p>
+            <ul>
+              <li>Exclusive custom event distributor quote</li>
+              <li>Commercial ice, heavy crates &amp; chillers on hire</li>
+              <li>Full return guarantee for unopened stock crates</li>
+              <li>Dedicated delivery vehicle sent straight to venue</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline">Plan Event Supply</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGISTICS FEATURE -->
+    <section class="feature">
+      <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80" alt="ChillHub wholesale beverage warehouse logistics and delivery vehicles" loading="lazy" width="1600" height="900">
+      <div class="feature__panel">
+        <p class="eyebrow eyebrow--light">How wholesale ordering works</p>
+        <h2 class="section__title">Three simple steps from cart to cooler.</h2>
+        <ol class="steps">
+          <li>
+            <b>01</b>
+            <div>
+              <h3>Choose your nearest branch</h3>
+              <p>Select Ottapalam, Palakkad Town, Shoranur, or Cherpulassery so your stock ships from the nearest warehouse depot.</p>
+            </div>
+          </li>
+          <li>
+            <b>02</b>
+            <div>
+              <h3>Send your case list on WhatsApp</h3>
+              <p>Add cases in the catalog and click "Send list on WhatsApp". Your local branch coordinator confirms availability within 15 minutes.</p>
+            </div>
+          </li>
+          <li>
+            <b>03</b>
+            <div>
+              <h3>Unloaded right at your doorstep</h3>
+              <p>Our dedicated delivery vans unload chilled-ready crates right inside your shop. Settle via Cash, UPI, or weekly store credit.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DYNAMIC BRANCH DELIVERY ROUTES -->
+    <section class="section" id="delivery">
+      <div class="container delivery">
+        <div>
+          <p class="eyebrow">District Fleet &amp; Delivery</p>
+          <h2 class="section__title" id="deliveryBranchTitle">Ottapalam (Central Hub) — Route Fleet</h2>
+          <p class="section__lead" id="deliveryLead">Our distribution fleet leaves the warehouse early morning. Order before 11:00 AM for same-day delivery within 25 km.</p>
+          
+          <div style="margin-top: 1.5rem;">
+            <button type="button" class="btn btn--outline btn--sm" data-action="open-branch-modal">
+              Switch Active Branch ⇄
+            </button>
+          </div>
+
+          <dl class="hours">
+            <div>
+              <dt>Branch Location &amp; Warehouse</dt>
+              <dd id="deliveryAddress">Main Road, Near Bus Stand, Ottapalam, Kerala 679101</dd>
+            </div>
+            <div>
+              <dt>Depot Dispatch Hours</dt>
+              <dd id="deliveryHours">Mon–Sat: 6:00 AM – 9:00 PM | Sun: 8:00 AM – 1:00 PM</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.85rem; font-weight: 800;">Today's Active Delivery Routes</h3>
+          <ul class="routes" id="routesList" aria-label="Branch delivery coverage"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS TESTIMONIALS -->
+    <section class="section section--ink">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow eyebrow--light">Retailer Network</p>
+          <h2 class="section__title">Trusted by 1,200+ shops and cool bars that never run dry.</h2>
+        </div>
+        <div class="quotes">
+          <figure>
+            <blockquote>"During festival season, our coolers empty out twice a day. ChillHub's Ottapalam hub dispatches a second van within 45 minutes of a WhatsApp message."</blockquote>
+            <figcaption><b>K. M. Radhakrishnan</b><span>Supermarket Owner, Ottapalam</span></figcaption>
+          </figure>
+          <figure>
+            <blockquote>"We run a high-volume bakery and cool bar near the railway junction. Getting mixed cases of Goli soda, Badam milk and juices on one morning bill makes accounting easy."</blockquote>
+            <figcaption><b>Faisal Rahman</b><span>Royal Cool Bar, Shoranur</span></figcaption>
+          </figure>
+          <figure>
+            <blockquote>"Supplied 250 cases of mineral water and colas for an outdoor wedding catering contract. They delivered chilled crates with ice, and collected unopened boxes next day."</blockquote>
+            <figcaption><b>Sunil Kumar</b><span>Malabar Caterers, Cherpulassery</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section" id="faq">
+      <div class="container faq">
+        <div>
+          <p class="eyebrow">Frequently Asked Questions</p>
+          <h2 class="section__title">Everything shop owners need to know.</h2>
+        </div>
+        <div class="faq__list">
+          <details>
+            <summary>Is there a minimum order quantity (MOQ)?</summary>
+            <p>For door-to-door delivery on our scheduled route van, the minimum is just 5 cases (mix any brands or flavors). For walk-in counter pickups at our Ottapalam or Palakkad warehouses, there is zero minimum — you can pick even 1 single case.</p>
+          </details>
+          <details>
+            <summary>Can I mix different brands and bottle sizes in one order?</summary>
+            <p>Yes, absolutely! You can combine 2 cases of Cola, 1 case of Mango juice, 1 case of Goli soda, and 1 case of packaged water. Your total cases count together toward your wholesale tier discount.</p>
+          </details>
+          <details>
+            <summary>How does the branch selection work?</summary>
+            <p>We operate 4 distribution hubs across the district: Ottapalam Central Hub, Palakkad City Depot, Shoranur Junction Branch, and Cherpulassery &amp; Pattambi Point. Selecting your nearest branch routes your order directly to the local manager and ensures faster dispatch.</p>
+          </details>
+          <details>
+            <summary>What payment modes are accepted?</summary>
+            <p>We accept Cash on Delivery, UPI (Google Pay, PhonePe, Paytm), and direct IMPS/NEFT bank transfer upon unloading. Regular retail accounts can apply for weekly revolving store credit after 30 days of consistent business.</p>
+          </details>
+          <details>
+            <summary>Do you provide visi-coolers or event chillers?</summary>
+            <p>Yes. Branded double-door and single-door visi-coolers are allocated free of charge to registered retailers maintaining monthly purchase volume. For outdoor events, marriages, and festivals, we rent out heavy chillers, insulated ice boxes, and supply commercial tube ice.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & QUOTE FORM -->
+    <section class="section section--tint" id="contact">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow">Wholesale Rate Enquiries</p>
+          <h2 class="section__title" id="contactBranchName">Ask Ottapalam Hub for Today's Rates</h2>
+          <p class="section__lead">Tell us what your shop needs or request today's company price list. Our dispatch team responds in less than 15 minutes during operating hours.</p>
+          
+          <ul class="contact__list">
+            <li>
+              <span>Direct Phone</span>
+              <a href="tel:+919048050905" id="contactPhone">+91 90480 50905</a>
+            </li>
+            <li>
+              <span>WhatsApp Instant Order</span>
+              <a href="https://wa.me/919048050905" target="_blank" rel="noopener" id="contactWa">Chat with Branch Dispatcher ➔</a>
+            </li>
+            <li>
+              <span>Warehouse Location</span>
+              <p id="contactAddress">Main Road, Near Bus Stand, Ottapalam, Kerala 679101</p>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form" id="quoteForm" novalidate>
+          <div class="form__row">
+            <label>
+              Select Delivery Branch
+              <select name="branch" id="quoteBranchSelect" aria-label="Select delivery branch"></select>
+            </label>
+            <label>
+              Your Name *
+              <input name="name" required autocomplete="name" placeholder="e.g. Ramesh Kumar">
+            </label>
+          </div>
+
+          <div class="form__row">
+            <label>
+              Shop / Business Name
+              <input name="shop" autocomplete="organization" placeholder="e.g. Green Valley Bakery">
+            </label>
+            <label>
+              Mobile / WhatsApp Number *
+              <input name="phone" type="tel" required autocomplete="tel" placeholder="10-digit phone number">
+            </label>
+          </div>
+
+          <label>
+            Buyer Type
+            <select name="type">
+              <option value="Retail Petty Shop / Bakery">Retail Petty Shop / Bakery</option>
+              <option value="Cool Bar / Juice Corner">Cool Bar / Juice Corner</option>
+              <option value="Supermarket / Grocery">Supermarket / Grocery</option>
+              <option value="Hotel / Restaurant">Hotel / Restaurant</option>
+              <option value="Event / Wedding Catering">Event / Wedding Catering</option>
+              <option value="Sub-Distributor">Sub-Distributor</option>
+            </select>
+          </label>
+
+          <label>
+            What drinks or quantity do you need?
+            <textarea name="msg" rows="3" placeholder="e.g. 10 cases Cola 600ml, 5 cases Mango 200ml, 4 cases Water 1L"></textarea>
+          </label>
+
+          <button class="btn btn--primary btn--block" type="submit">
+            Send Rate Request ➔
+          </button>
+          <div class="form__status" id="formStatus" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="brand__name brand__name--foot">ChillHub<span>Wholesale Drinks</span></p>
+        <p>Authorized wholesale distributor for cool drinks, fruit juices, soda, and packaged drinking water across Ottapalam, Palakkad, Shoranur, and Cherpulassery.</p>
+      </div>
+      <nav aria-label="Footer Navigation">
+        <a href="#categories">Categories</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#pricing">Bulk Pricing</a>
+        <a href="#delivery">Routes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__copy">© 2026 ChillHub Wholesale Drinks. All registered brand names and beverage trademarks belong to their respective manufacturers.</p>
+    </div>
+  </footer>
+
+  <!-- MULTI-BRANCH SELECTOR MODAL -->
+  <div class="branch-modal-backdrop" id="branchModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalBranchTitle">
+    <div class="branch-modal">
+      <div class="branch-modal__head">
+        <div>
+          <h2 id="modalBranchTitle">Select Your Delivery Branch</h2>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 2px;">Orders, routes, and phone numbers will adapt to your selected hub.</p>
+        </div>
+        <button class="icon-btn" id="closeBranchModal" aria-label="Close branch selection dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="branch-modal__body">
+        <div class="branch-cards-grid" id="branchCardsContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORDER DRAWER WITH REAL-TIME PICTURES & BRANCH INTEGRATION -->
+  <div class="drawer-backdrop" id="backdrop" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Wholesale Order List" aria-hidden="true">
+    <div class="drawer__head">
+      <div>
+        <h2>Your Order List</h2>
+        <span style="font-size: 0.75rem; color: var(--color-text-muted);">Review cases before WhatsApp dispatch</span>
+      </div>
+      <button class="icon-btn" id="closeDrawer" aria-label="Close order list">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <!-- Active Branch Indicator in Drawer -->
+    <div class="drawer__branch-banner">
+      <span>📍 Dispatch Hub: <strong id="drawerBranchLabel">Ottapalam (Central Hub)</strong></span>
+      <button type="button" data-action="open-branch-modal">Change ⇄</button>
+    </div>
+
+    <ul class="drawer__items" id="drawerItems"></ul>
+    <p class="drawer__empty" id="drawerEmpty">No cases added yet. Browse the catalog and add chilled drinks.</p>
+
+    <!-- Live Volume Tier Progress -->
+    <div class="drawer-progress">
+      <div class="progress-track"><div class="progress-fill" id="tierProgressBar"></div></div>
+      <p class="drawer__tier" id="tierNote">Add 5 cases to unlock route delivery.</p>
+    </div>
+
+    <div class="drawer__foot">
+      <div class="drawer__total">
+        <span>Total Quantity:</span>
+        <b id="totalCases">0 cases</b>
+      </div>
+      <div class="drawer__total">
+        <span>Estimated Case Total:</span>
+        <b id="totalValue">₹0</b>
+      </div>
+
+      <a class="btn btn--primary btn--block" id="sendWa" href="#" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        Send Order on WhatsApp
+      </a>
+      <button class="btn btn--text" id="clearCart">Clear order list</button>
+    </div>
+  </aside>
+
+  <!-- POPUP TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- APPLICATION SCRIPT -->
+  <script src="app.js"></script>
+</body>
+</html>

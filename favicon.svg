@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="favTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="50%" stop-color="#0e7c7b" />
+      <stop offset="100%" stop-color="#073338" />
+    </linearGradient>
+    <linearGradient id="favCitrus" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9e00" />
+      <stop offset="100%" stop-color="#e8590c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="18" fill="url(#favTeal)" />
+  <rect x="2" y="2" width="60" height="60" rx="16" stroke="#ffffff" stroke-opacity="0.3" stroke-width="2" />
+  
+  <!-- Chilled bottle -->
+  <path d="M27 15 h10 v5 l3 5 v24 a4 4 0 0 1 -4 4 h-8 a4 4 0 0 1 -4 -4 v-24 l3 -5 v-5 z" fill="#ffffff" />
+  <rect x="26.5" y="12" width="11" height="4" rx="1.5" fill="url(#favCitrus)" />
+  
+  <!-- Bubbles -->
+  <circle cx="32" cy="38" r="3" fill="url(#favCitrus)" />
+  <circle cx="28" cy="43" r="1.8" fill="url(#favCitrus)" />
+  <circle cx="36" cy="44" r="1.6" fill="url(#favCitrus)" />
+  
+  <!-- Ice sparkle -->
+  <path d="M49 11 l2 4.5 l4.5 2 l-4.5 2 l-2 4.5 l-2 -4.5 l-4.5 -2 l4.5 -2 z" fill="#ffe259" />
+</svg>

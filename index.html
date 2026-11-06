@@ -8,11 +8,12 @@
   <meta property="og:title" content="ChillHub Wholesale — Cool Drinks & Beverages by the Case | Pathanamthitta">
   <meta property="og:description" content="Wholesale beverage distributor with real-time stock, Pathanamthitta sub-district route logistics, and instant WhatsApp ordering.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1200&q=80">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect x=%229%22 y=%223%22 width=%2214%22 height=%2226%22 rx=%225%22 fill=%22%230e7c7b%22/%3E%3Ccircle cx=%2216%22 cy=%2218%22 r=%223%22 fill=%22%23e8590c%22/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect x=%229%22 y=%223%22 width=%2214%22 height=%2226%22 rx=%225%22 fill=%22%230e7c7b%22/%3E%3Ccircle cx=%2216%22 cy=%2218%22 r=%223%22 fill=%22%23e8590c%22/%3E%3C/svg%3E">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://api.fontshare.com">
-  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&f[]=satoshi@400,500,700,800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
 
@@ -35,54 +36,83 @@
 <body>
   <a class="skip" href="#main">Skip to main content</a>
 
-  <!-- HEADER -->
+  <!-- TOPBAR HELPLINE & DISPATCH STATUS -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__status">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span><strong>Live Depot Dispatch:</strong> Serving Pathanamthitta, Thiruvalla, Adoor, Ranni &amp; Konni</span>
+      </div>
+      <div class="topbar__info">
+        <span>⏰ Counter: Mon–Sat 6:00 AM – 9:00 PM</span>
+        <span class="topbar__divider">|</span>
+        <a href="tel:+919447050905" class="topbar__link">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 94470 50905
+        </a>
+        <span class="topbar__divider">|</span>
+        <a href="https://wa.me/919447050905?text=Hi%20ChillHub%2C%20please%20share%20today%27s%20wholesale%20price%20list" target="_blank" rel="noopener" class="topbar__link topbar__link--wa">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+          WhatsApp Order
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- REDESIGNED HEADER -->
   <header class="header" id="top">
     <div class="container header__inner">
-      <a href="#top" class="brand" aria-label="ChillHub Wholesale Home">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28">
-            <rect x="9" y="3" width="14" height="26" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
-            <path d="M9 13h14" stroke="currentColor" stroke-width="2.5"/>
-            <circle cx="16" cy="20" r="2.5" fill="currentColor"/>
-          </svg>
-        </span>
-        <span class="brand__name">ChillHub<span>Wholesale Drinks</span></span>
+      <!-- ChillHub Brand Logo -->
+      <a href="#top" class="brand" aria-label="ChillHub Wholesale Beverages Home">
+        <img src="logo.svg" alt="ChillHub Wholesale Drinks Logo" class="brand__logo" width="220" height="48">
       </a>
 
+      <!-- Primary Navigation -->
       <nav class="nav" id="nav" aria-label="Primary Navigation">
         <a href="#categories">Categories</a>
-        <a href="#catalog">Catalog</a>
+        <a href="#catalog">Live Catalog</a>
         <a href="#pricing">Bulk Pricing</a>
-        <a href="#delivery">Routes &amp; Branches</a>
+        <a href="#delivery">Routes &amp; Hubs</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
 
+      <!-- Header Action Controls -->
       <div class="header__actions">
-        <!-- Branch Switcher Pill -->
-        <button class="branch-pill" id="headerBranchBtn" data-action="open-branch-modal" aria-label="Select delivery branch location" title="Switch your delivery branch">
+        <!-- Sub-District Branch Switcher Pill -->
+        <button class="branch-pill" id="headerBranchBtn" data-action="open-branch-modal" aria-label="Select delivery sub-district branch" title="Click to switch your delivery sub-district hub">
+          <span class="live-dot" aria-hidden="true"></span>
           <span class="branch-pill__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
               <circle cx="12" cy="10" r="3"/>
             </svg>
           </span>
-          <span class="branch-pill__name" id="headerBranchName">Pathanamthitta (Central Hub)</span>
-          <span class="branch-pill__badge" id="headerBranchBadge">Main Warehouse</span>
+          <span class="branch-pill__content">
+            <span class="branch-pill__sub">SUB-DISTRICT</span>
+            <span class="branch-pill__name" id="headerBranchName">Pathanamthitta (Central Hub)</span>
+          </span>
+          <span class="branch-pill__badge" id="headerBranchBadge">Main Depot</span>
           <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
         </button>
 
-        <!-- Cart Button -->
-        <button class="cart-btn" id="cartBtn" aria-label="Open order list">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <!-- Direct WhatsApp Quick-Order (Desktop) -->
+        <a href="https://wa.me/919447050905?text=Hi%20ChillHub%2C%20I%20want%20to%20order%20drinks" target="_blank" rel="noopener" class="btn btn--outline btn--sm header__wa-btn" aria-label="Quick order via WhatsApp">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+          <span>Quick Quote</span>
+        </a>
+
+        <!-- Order List / Cart Button -->
+        <button class="cart-btn" id="cartBtn" aria-label="Open wholesale order list">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M3 7h18l-2 12H5L3 7z"/>
             <path d="M8 7V5a4 4 0 0 1 8 0v2"/>
           </svg>
-          <span>Order List</span>
+          <span class="cart-btn__text">Order List</span>
           <b class="cart-count" id="cartCount">0</b>
         </button>
 
-        <!-- Mobile Menu Toggle -->
+        <!-- Mobile Menu Toggle Button -->
         <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav">
           <span></span><span></span><span></span>
         </button>
@@ -483,8 +513,10 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
-      <div>
-        <p class="brand__name brand__name--foot">ChillHub<span>Wholesale Drinks</span></p>
+      <div class="footer__brand-wrap">
+        <a href="#top" aria-label="ChillHub Wholesale Home">
+          <img src="logo.svg" alt="ChillHub Wholesale Drinks Logo" class="brand__logo brand__logo--foot" width="200" height="44" style="filter: brightness(0) invert(1); margin-bottom: 0.75rem;">
+        </a>
         <p>Authorized wholesale distributor for cool drinks, fruit juices, soda, and packaged drinking water across Pathanamthitta, Thiruvalla, Adoor, Ranni, Konni, and Mallappally sub-districts.</p>
       </div>
       <nav aria-label="Footer Navigation">

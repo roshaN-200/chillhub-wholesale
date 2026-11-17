@@ -185,46 +185,46 @@
     {
       id: 'mango-200',
       cat: 'juice',
-      name: 'Alphonso Mango Tetra Drink',
-      pack: '200 ml × 30 packs',
+      name: 'Mango Sparkling Fruit Fizz (Chilled)',
+      pack: '200 ml × 30 cans/packs',
       price: 480,
       tag: 'Best seller',
       stock: 'In stock',
-      image: 'https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=600&q=80',
-      desc: 'Thick, sweet, delicious mango pulp nectar. Top-selling item in school zones, petty shops, and bakeries.'
+      image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80',
+      desc: 'Sparkling mango fruit soda chilled on crushed ice. Top-selling item in school zones, petty shops, and bakery chillers.'
     },
     {
       id: 'mango-1l',
       cat: 'juice',
-      name: 'Mango Drink Jumbo PET',
+      name: 'Mango Fizz Sparkling Jumbo PET',
       pack: '1.2 L × 12 bottles',
       price: 780,
       tag: 'Value pack',
       stock: 'In stock',
-      image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80',
-      desc: '1.2 litre mango nectar bottles. Excellent margin item for family dine-ins, restaurants, and catering events.'
+      image: 'https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=600&q=80',
+      desc: '1.2 litre sparkling mango soft drink bottles. High margin mover for family dine-ins, restaurants, and catering events.'
     },
     {
       id: 'guava-1l',
       cat: 'juice',
-      name: 'Pink Guava Nectar Juice',
-      pack: '1 L × 12 tetra packs',
+      name: 'Pink Guava Sparkling Soda Bottle',
+      pack: '1 L × 12 bottles',
       price: 1260,
       tag: 'Premium',
       stock: 'In stock',
       image: 'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=600&q=80',
-      desc: 'Real pink guava fruit pulp with a mild chili-salt kick sensation. High recurring orders from hotels.'
+      desc: 'Real sparkling pink guava fruit soda with crisp carbonated effervescence. High recurring orders from cool bars & cafes.'
     },
     {
       id: 'mixed-200',
       cat: 'juice',
-      name: 'Mixed Fruit Tropical Tetra',
-      pack: '200 ml × 30 packs',
+      name: 'Tropical Fruit Fizz Cans (Chilled)',
+      pack: '250 ml × 30 cans',
       price: 540,
       tag: 'Kids favorite',
       stock: 'In stock',
-      image: 'https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?auto=format&fit=crop&w=600&q=80',
-      desc: 'Nutritious blend of orange, apple, pineapple and banana extracts with added Vitamin C.'
+      image: 'https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&fit=crop&w=600&q=80',
+      desc: 'Effervescent tropical fruit carbonated punch blend chilled on ice. High-turnover party cooler favorite.'
     },
     {
       id: 'energy-250',
@@ -251,57 +251,57 @@
     {
       id: 'sports-500',
       cat: 'energy',
-      name: 'Sports Isotonic Hydration',
+      name: 'Sports Isotonic Sparkling Fizz',
       pack: '500 ml × 24 bottles',
       price: 960,
       tag: 'Electrolyte',
       stock: 'In stock',
-      image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80',
-      desc: 'Electrolyte rehydration drink for football turf grounds, gym tuck shops, and summer outdoor stalls.'
+      image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=600&q=80',
+      desc: 'Sparkling electrolyte rehydration drink for football turf grounds, gym tuck shops, and summer outdoor stalls.'
     },
     {
       id: 'water-500',
       cat: 'water',
-      name: 'Packaged Drinking Water',
+      name: 'Chilled Sparkling Soda Water 500ml',
       pack: '500 ml × 24 bottles',
       price: 140,
       tag: 'Daily staple',
       stock: 'In stock',
       image: 'https://images.unsplash.com/photo-1560023907-5f339617ea30?auto=format&fit=crop&w=600&q=80',
-      desc: 'ISI certified packaged drinking water with essential minerals. Fast turnover for conferences & events.'
+      desc: 'Crisp, crystal-clear sparkling soda water with punchy effervescence. Fast turnover for cooling refreshments & events.'
     },
     {
       id: 'water-1l',
       cat: 'water',
-      name: 'Packaged Mineral Water 1L',
+      name: 'Sparkling Mineral Soda Water 1L',
       pack: '1 L × 12 bottles',
       price: 110,
       tag: 'Best seller',
       stock: 'In stock',
-      image: 'https://images.unsplash.com/photo-1559839914-17aae19cec71?auto=format&fit=crop&w=600&q=80',
-      desc: '1-Litre chilled or room temperature cartons. The bedrock product for every hotel table and wayside kiosk.'
+      image: 'https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80',
+      desc: '1-Litre chilled sparkling soda water bottles. Essential stock for hotel tables, wayside kiosks, and juice bars.'
     },
     {
       id: 'water-2l',
       cat: 'water',
-      name: 'Packaged Water 2L Travel Pack',
+      name: 'Sparkling Soda Water 2L Travel Pack',
       pack: '2 L × 9 bottles',
       price: 150,
       tag: 'Travel pack',
       stock: 'In stock',
       image: 'https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80',
-      desc: 'Large travel water bottles. Very popular at highway bypass shops, bus stands, and railway stalls.'
+      desc: 'Large travel sparkling soda bottles with long-lasting fizz. Very popular at highway bypass shops & restaurants.'
     },
     {
       id: 'water-20l',
       cat: 'water',
-      name: '20L Commercial Water Jar',
-      pack: '1 jar (Clean refill)',
+      name: 'Commercial Soda Dispenser Batch',
+      pack: '1 commercial batch crate',
       price: 45,
       tag: 'Bulk refill',
       stock: 'In stock',
-      image: 'https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=600&q=80',
-      desc: 'Food-grade sealed 20-litre water bubble top jars with tamper-proof cap seal for offices and marriage halls.'
+      image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=600&q=80',
+      desc: 'Commercial wholesale carbonated soft drink supply crate for marriage caterers, restaurant kitchens, and events.'
     },
     {
       id: 'goli',
@@ -312,7 +312,7 @@
       tag: 'Kerala fav',
       stock: 'In stock',
       image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=600&q=80',
-      desc: 'Vintage Indian codd-neck marble goli soda. Nostalgic fizz punch in classic lemon and paneer flavors.'
+      desc: 'Vintage Indian codd-neck marble goli soda on crushed ice. Nostalgic fizz punch in classic lemon and paneer flavors.'
     },
     {
       id: 'soda-750',
@@ -350,46 +350,46 @@
     {
       id: 'milk-badam',
       cat: 'dairy',
-      name: 'Badam Flavoured Milk Glass Bottle',
+      name: 'Vanilla Cream Soda (Chilled Bottle)',
       pack: '180 ml × 30 bottles',
       price: 750,
       tag: 'High margin',
       stock: 'In stock',
-      image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80',
-      desc: 'Rich sterilized double toned milk infused with saffron, crunchy almond bits and cardamom aroma.'
+      image: 'https://images.unsplash.com/photo-1554866585-cd94860890b7?auto=format&fit=crop&w=600&q=80',
+      desc: 'Smooth vanilla-infused sparkling cream soda with rich creamy mouthfeel and delicate sweetness. Huge bakery favorite.'
     },
     {
       id: 'milk-choco',
       cat: 'dairy',
-      name: 'Rich Chocolate Dairy Milkshake',
+      name: 'Dark Chocolate Malt Fizz (Chilled Bottle)',
       pack: '180 ml × 30 bottles',
       price: 750,
       tag: 'Kids favorite',
       stock: 'In stock',
-      image: 'https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=600&q=80',
-      desc: 'Creamy chocolate dairy milkshake with smooth mouthfeel. High sales in school & college bakery counters.'
+      image: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80',
+      desc: 'Carbonated dark chocolate malt soft drink with rich cocoa notes and fizzy kick. Fast mover in colleges and youth hangouts.'
     },
     {
       id: 'buttermilk',
       cat: 'dairy',
-      name: 'Kerala Spiced Sambharam (Moru)',
-      pack: '200 ml × 30 pouches/cups',
+      name: 'Kerala Spiced Moru Fizz (Chilled Soda)',
+      pack: '200 ml × 30 bottles/cups',
       price: 350,
       tag: 'Traditional',
       stock: 'In stock',
-      image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=600&q=80',
-      desc: 'Authentic Kerala spiced buttermilk blended with ginger, curry leaves, and green chilies. Ultimate summer coolant.'
+      image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80',
+      desc: 'Kerala spiced carbonated moru soda with ginger, green chili, and curry leaf essence. Chilled traditional summer coolant.'
     }
   ];
 
   const CAT_LABELS = {
-    all: 'All beverages',
-    soft: 'Soft drinks',
-    juice: 'Fruit juices',
+    all: 'All soft drinks',
+    soft: 'Colas & citrus',
+    juice: 'Fruit fizzes',
     energy: 'Energy & sports',
-    water: 'Packaged water',
+    water: 'Sparkling water',
     soda: 'Soda & mixers',
-    dairy: 'Dairy drinks'
+    dairy: 'Cream & coolant fizzes'
   };
 
   // --- STATE MANAGEMENT ---
@@ -450,6 +450,9 @@
     // 1. Header branch buttons and badges
     const headerBranchName = $('#headerBranchName');
     if (headerBranchName) headerBranchName.textContent = b.name;
+
+    const navBranchName = $('#navBranchName');
+    if (navBranchName) navBranchName.textContent = b.name;
 
     const branchBadge = $('#headerBranchBadge');
     if (branchBadge) branchBadge.textContent = b.badge;

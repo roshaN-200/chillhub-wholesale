@@ -22,7 +22,7 @@
     "@context": "https://schema.org",
     "@type": "WholesaleStore",
     "name": "ChillHub Wholesale Beverages Pathanamthitta",
-    "description": "Wholesale beverage distributor supplying soft drinks, juices, energy cans, packaged water, soda and dairy drinks across Pathanamthitta district and sub-districts.",
+    "description": "Wholesale distributor supplying chilled soft drinks, sparkling fruit fizzes, energy cans, club soda, and cool beverages across Pathanamthitta district and sub-districts.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Pathanamthitta",
@@ -36,45 +36,48 @@
 <body>
   <a class="skip" href="#main">Skip to main content</a>
 
-  <!-- CLEAN & SPACIOUS HEADER -->
+  <!-- CLEAN & SPACIOUS UNCLUTTERED HEADER -->
   <header class="header" id="top">
     <div class="container header__inner">
       <!-- ChillHub Brand Logo -->
-      <a href="#top" class="brand" aria-label="ChillHub Wholesale Beverages Home">
-        <img src="logo.svg" alt="ChillHub Wholesale Drinks Logo" class="brand__logo" width="185" height="40">
+      <a href="#top" class="brand" aria-label="ChillHub Wholesale Soft Drinks Home">
+        <img src="logo.svg" alt="ChillHub Wholesale Drinks Logo" class="brand__logo" width="165" height="35">
       </a>
 
-      <!-- Primary Navigation (Clean & Essential) -->
+      <!-- Clean 1-Word Navigation -->
       <nav class="nav" id="nav" aria-label="Primary Navigation">
-        <a href="#catalog">Live Catalog</a>
-        <a href="#pricing">Bulk Pricing</a>
-        <a href="#delivery">Routes &amp; Hubs</a>
+        <!-- Mobile Hub Switcher (Only visible inside opened mobile navigation drawer) -->
+        <div class="nav-mobile-hub" id="navMobileHub">
+          <span class="nav-mobile-hub__label">Delivery Hub:</span>
+          <button class="nav-mobile-hub__btn" data-action="open-branch-modal" type="button">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span id="navBranchName">Pathanamthitta</span> ▾
+          </button>
+        </div>
+
+        <a href="#catalog">Catalog</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#delivery">Routes</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <!-- Action Controls -->
+      <!-- Clean Minimal Header Actions -->
       <div class="header__actions">
-        <!-- Compact Sub-District Hub Pill -->
-        <button class="branch-pill" id="headerBranchBtn" data-action="open-branch-modal" aria-label="Select delivery sub-district branch" title="Click to switch delivery sub-district hub">
-          <span class="live-dot" aria-hidden="true"></span>
-          <span class="branch-pill__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-          </span>
+        <!-- Desktop Branch Switcher (Auto-hidden on small mobile screens to prevent congestion) -->
+        <button class="branch-pill" id="headerBranchBtn" data-action="open-branch-modal" aria-label="Select delivery sub-district branch" title="Click to switch delivery branch">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--color-primary); flex-shrink: 0;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <span class="branch-pill__name" id="headerBranchName">Pathanamthitta</span>
           <span class="sr-only" id="headerBranchBadge">Main Depot</span>
-          <svg class="chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          <svg class="chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
         </button>
 
-        <!-- Order List / Cart Button -->
+        <!-- Cart Button -->
         <button class="cart-btn" id="cartBtn" aria-label="Open wholesale order list">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M3 7h18l-2 12H5L3 7z"/>
             <path d="M8 7V5a4 4 0 0 1 8 0v2"/>
           </svg>
-          <span class="cart-btn__text">Order List</span>
+          <span class="cart-btn__text">Cart</span>
           <b class="cart-count" id="cartCount">0</b>
         </button>
 
@@ -159,27 +162,27 @@
               </a>
 
               <!-- Item 2 -->
-              <a href="#catalog" class="mini-card" data-jump="juice">
-                <img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=150&q=80" alt="Alphonso Mango Tetra" class="mini-card__thumb" loading="lazy">
+              <a href="#catalog" class="mini-card" data-jump="soft">
+                <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=150&q=80" alt="Orange Citrus Fizz Can" class="mini-card__thumb" loading="lazy">
                 <div class="mini-card__info">
-                  <h4 class="mini-card__name">Alphonso Mango Tetra</h4>
-                  <p class="mini-card__meta">200 ml × 30 · High Margin Item</p>
+                  <h4 class="mini-card__name">Orange Fizz Can (Chilled)</h4>
+                  <p class="mini-card__meta">300 ml × 24 · Citrus Sparkling Punch</p>
                 </div>
                 <div class="mini-card__price">
-                  <b>₹480</b>
+                  <b>₹840</b>
                   <span>/ case</span>
                 </div>
               </a>
 
               <!-- Item 3 -->
-              <a href="#catalog" class="mini-card" data-jump="soda">
-                <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=150&q=80" alt="Kerala Goli Soda" class="mini-card__thumb" loading="lazy">
+              <a href="#catalog" class="mini-card" data-jump="soft">
+                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=150&q=80" alt="Clear Lemon Lime Soda" class="mini-card__thumb" loading="lazy">
                 <div class="mini-card__info">
-                  <h4 class="mini-card__name">Kerala Marble Goli Soda</h4>
-                  <p class="mini-card__meta">200 ml × 24 · Kerala Classic</p>
+                  <h4 class="mini-card__name">Clear Lemon-Lime Sparkling</h4>
+                  <p class="mini-card__meta">750 ml × 24 · High Carbonation</p>
                 </div>
                 <div class="mini-card__price">
-                  <b>₹240</b>
+                  <b>₹900</b>
                   <span>/ case</span>
                 </div>
               </a>
@@ -346,24 +349,24 @@
             </div>
           </a>
           <a href="#catalog" class="cat" data-jump="juice">
-            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=80" alt="Fresh mango and guava fruit juices" loading="lazy" width="900" height="675">
+            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=900&q=80" alt="Chilled sparkling fruit soda cans on crushed ice" loading="lazy" width="900" height="675">
             <div class="cat__body">
-              <h3>Fruit Juices</h3>
-              <p>Alphonso mango, pink guava &amp; mixed tropical punch</p>
+              <h3>Fruit Fizzes</h3>
+              <p>Sparkling mango fizz, pink guava soda &amp; tropical sparkling punch</p>
             </div>
           </a>
           <a href="#catalog" class="cat" data-jump="energy">
             <img src="https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=900&q=80" alt="Chilled energy drink cans with water splash" loading="lazy" width="900" height="675">
             <div class="cat__body">
               <h3>Energy &amp; Sports</h3>
-              <p>Taurine cans, PET energy &amp; electrolyte hydration</p>
+              <p>Taurine cans, PET energy &amp; electrolyte hydration fizzes</p>
             </div>
           </a>
           <a href="#catalog" class="cat" data-jump="water">
-            <img src="https://images.unsplash.com/photo-1559839914-17aae19cec71?auto=format&fit=crop&w=900&q=80" alt="Clean mineral water bottles and dispenser jar" loading="lazy" width="900" height="675">
+            <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=900&q=80" alt="Chilled sparkling club soda bottles with effervescent bubbles" loading="lazy" width="900" height="675">
             <div class="cat__body">
-              <h3>Packaged Water</h3>
-              <p>500 ml, 1 L, 2 L travel packs &amp; 20 L bubble-top refill jars</p>
+              <h3>Sparkling Water</h3>
+              <p>500 ml, 1 L &amp; 2 L chilled sparkling club sodas &amp; mineral waters</p>
             </div>
           </a>
           <a href="#catalog" class="cat" data-jump="soda">
@@ -374,10 +377,10 @@
             </div>
           </a>
           <a href="#catalog" class="cat cat--wide" data-jump="dairy">
-            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=900&q=80" alt="Badam flavoured milk and spiced buttermilk bottles" loading="lazy" width="900" height="675">
+            <img src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&fit=crop&w=900&q=80" alt="Chilled sparkling cream sodas and flavored coolants on ice" loading="lazy" width="900" height="675">
             <div class="cat__body">
-              <h3>Dairy &amp; Coolants</h3>
-              <p>Badam saffron milk, rich chocolate milkshake &amp; Kerala spiced moru</p>
+              <h3>Cream &amp; Coolant Fizzes</h3>
+              <p>Vanilla cream soda, dark malt fizz &amp; spiced moru soda</p>
             </div>
           </a>
         </div>
@@ -389,28 +392,28 @@
       <div class="container">
         <div class="section__head section__head--row">
           <div>
-            <p class="eyebrow">Real-Time Drinks Catalog</p>
+            <p class="eyebrow">Real-Time Soft Drinks Catalog</p>
             <h2 class="section__title">Build your order list by the case.</h2>
-            <p class="section__lead">Pick cold drinks, select cases, and dispatch your order list directly to your nearest branch on WhatsApp.</p>
+            <p class="section__lead">Pick cold soft drinks, select cases, and dispatch your order list directly to your nearest branch on WhatsApp.</p>
           </div>
           
           <!-- Instant Search -->
           <label class="search">
-            <span class="sr-only">Search beverages</span>
+            <span class="sr-only">Search soft drinks</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-            <input type="search" id="search" placeholder="Search drinks: cola, mango, soda, water...">
+            <input type="search" id="search" placeholder="Search drinks: cola, mango fizz, soda, club...">
           </label>
         </div>
 
         <!-- Filter Pill Tabs -->
-        <div class="filters" role="tablist" aria-label="Filter drinks by category" id="filters">
-          <button role="tab" aria-selected="true" class="active" data-filter="all">All Beverages</button>
-          <button role="tab" aria-selected="false" data-filter="soft">Soft Drinks</button>
-          <button role="tab" aria-selected="false" data-filter="juice">Fruit Juices</button>
+        <div class="filters" role="tablist" aria-label="Filter soft drinks by category" id="filters">
+          <button role="tab" aria-selected="true" class="active" data-filter="all">All Soft Drinks</button>
+          <button role="tab" aria-selected="false" data-filter="soft">Colas &amp; Citrus</button>
+          <button role="tab" aria-selected="false" data-filter="juice">Fruit Fizzes</button>
           <button role="tab" aria-selected="false" data-filter="energy">Energy &amp; Sports</button>
-          <button role="tab" aria-selected="false" data-filter="water">Packaged Water</button>
+          <button role="tab" aria-selected="false" data-filter="water">Sparkling Water</button>
           <button role="tab" aria-selected="false" data-filter="soda">Soda &amp; Mixers</button>
-          <button role="tab" aria-selected="false" data-filter="dairy">Dairy &amp; Coolants</button>
+          <button role="tab" aria-selected="false" data-filter="dairy">Cream &amp; Coolant Fizzes</button>
         </div>
 
         <!-- Real Product Grid Loaded via JS -->
@@ -675,7 +678,7 @@
         <a href="#top" aria-label="ChillHub Wholesale Home">
           <img src="logo.svg" alt="ChillHub Wholesale Drinks Logo" class="brand__logo brand__logo--foot" width="200" height="44" style="filter: brightness(0) invert(1); margin-bottom: 0.75rem;">
         </a>
-        <p>Authorized wholesale distributor for cool drinks, fruit juices, soda, and packaged drinking water across Pathanamthitta, Thiruvalla, Adoor, Ranni, Konni, and Mallappally sub-districts.</p>
+        <p>Authorized wholesale distributor for cool soft drinks, sparkling fruit fizzes, energy cans, club soda, and refreshing beverages across Pathanamthitta, Thiruvalla, Adoor, Ranni, Konni, and Mallappally sub-districts.</p>
       </div>
       <nav aria-label="Footer Navigation">
         <a href="#categories">Categories</a>

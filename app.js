@@ -363,7 +363,7 @@
       cat: 'dairy',
       name: 'Dark Chocolate Malt Fizz (Chilled Bottle)',
       pack: '180 ml × 30 bottles',
-      price: 750,
+      price: 600,
       tag: 'Kids favorite',
       stock: 'In stock',
       image: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80',
